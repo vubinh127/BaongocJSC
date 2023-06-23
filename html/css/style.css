@@ -699,6 +699,8 @@ nav > ul li > ul li > ul {
   background: none;
   padding: 12px;
   border: none;
+  font-size: 25px;
+  letter-spacing: -0.3px;
 }
 
 .pagination .page-link.active {
@@ -712,10 +714,112 @@ nav > ul li > ul li > ul {
   color: #FFF;
 }
 
+/* ////////// Item _detail //////////*/
+
+.block_detail .image {
+  max-width: 540px;
+  height: auto;
+  overflow: hidden;
+}
+
+.block_detail .detail_text h3{
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.block_detail .detail_text p {
+  color:  #616161;
+}
+
+.block_detail .btn_contact{
+  padding: 12px 61px;
+  border-radius: 8px;
+  background: #C51420;  
+  display: flex;
+  align-items: center; 
+  width: max-content;
+}
+
+.block_detail .btn_contact a {
+  color: #FFF;
+}
+
+.block_detail .btn_contact a svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
 
 
+.block_detail .box_rate {
+  padding: 80px 0 45px;
+}
+
+.block_detail .box_rate .nav-tabs .nav-link {
+  border: none;
+}
+
+.block_detail .box_rate .nav-tabs {
+  border: none;
+}
+
+.block_detail .nav-tabs .nav-link {
+  color: #666;
+  font-size: 16px;
+  padding: 0 50px 0 0;
+}
+
+.block_detail .nav-tabs .nav-link.active {
+  color: #000;
+  font-size: 16px;
+}
+
+.block_detail .box_rate .tab-content {
+  margin-top: 16px;
+}
+
+.block_detail .box_rate h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+.block_detail .box_rate p {
+  color: #000;
+  font-size: 16px;
+  line-height: 27px;
+}
 
 
+/*/////////// Project page //////////// */
+
+.project_page .top_project {
+  margin-bottom: 20px;
+}
+
+.project_page .top_project .image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.project_page .top_project .image img {
+  width: auto;
+  height: 273px;
+}
+
+.project_page .list_news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.project_page .list_news .box_news {
+  width: 31%;
+}
 
 /*////////////// Footer /////////////// */
 
@@ -853,6 +957,11 @@ footer .detail_info .info {
     flex-shrink: 0;
   }
 
+  /* Project PAge  */
+
+  .project_page .list_news .box_news {
+    width: 45%;
+  }
 
   /* Product page  */
   .product_page .row{
