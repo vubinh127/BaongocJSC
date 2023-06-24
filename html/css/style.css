@@ -582,7 +582,7 @@ nav > ul li > ul li > ul {
 
 .list_intro {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   margin-top: 39px;
   gap: 159px;
@@ -590,6 +590,7 @@ nav > ul li > ul li > ul {
 
 .list_intro .intro {
   text-align: center;
+  width: 16%;
 }
 
 .list_intro .intro img {
@@ -606,6 +607,7 @@ nav > ul li > ul li > ul {
 
 .list_intro .intro .text p{
   max-width: 305px;
+  margin: auto;
 }
 
 /*/////////// Company ////// */
@@ -819,7 +821,199 @@ nav > ul li > ul li > ul {
 
 .project_page .list_news .box_news {
   width: 31%;
+  border-top: none;
 }
+
+.project_page .list_news .box_news .image {
+  width: 100%;
+  height: 284px;
+  overflow: hidden;
+}
+
+.project_page .list_news .box_news .image img {
+  object-fit: cover;
+}
+
+
+/* //////////////// Product detail //////// */
+
+.block_product_detail {
+  padding: 80px 0;
+}
+
+.block_product_detail .title h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 16px;
+}
+
+.block_product_detail .author p{
+  color: #333;
+}
+
+.block_product_detail .author span{
+  font-weight: 600;
+}
+
+.block_product_detail .box_drop_down {
+  background: #F3F3F3;
+  padding: 3px 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.block_product_detail .box_drop_down .btn_drop img{
+  width: 9.29px;
+  height: 6.9px;
+}
+
+.block_product_detail .box_content {
+  margin-top: 33px;
+}
+
+.block_product_detail .box_content .title img{
+  width: 35px;
+  height: 35px;
+  margin-right: 11px;
+}
+
+.block_product_detail .first_grap {
+  padding: 16px 20px;
+  border-left: 1px solid #4598E4;
+  margin-bottom: 30px;
+}
+
+.block_product_detail h3{
+  color: #333;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.block_product_detail p {
+  margin-bottom: 21px;
+}
+
+.block_product_detail .paragrah img{
+  max-width: 690px;
+  height: 421px;
+}
+
+.box_social h3{
+  color: #3B3663;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.box_social img{
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.box_comment {
+  margin-top: 50px;
+}
+
+.box_comment h3{
+  color: #3B3663;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.box_comment textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ced4da;
+}
+
+.box_comment .box_name{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment_list  {
+  margin-top: 10px;
+}
+
+.comment_list ul{
+  list-style: none;
+  padding: 0;
+}
+
+.comment_list .avatar img{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.comment_list .tick {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.comment_list p{
+  color: #999;
+  margin-bottom: 0;
+}
+
+.comment.rep_cmt {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+
+/* box_right  */
+
+.box_right .title h3{
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.box_right .list {
+  padding: 24px 0;
+  border-top: 1px solid #C4C4C4;
+}
+
+.box_right .list .news{
+  margin-bottom: 20px;
+}
+
+.box_right .list .thumbnail{
+  width: 89.189px;
+  height: 72px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+
+.box_right .list .date p{
+  color: #C51420;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.box_right .list .text p{
+  color: #212121;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+
+
+
+
 
 /*////////////// Footer /////////////// */
 
@@ -920,6 +1114,7 @@ footer .detail_info .info {
   .block_review,
   .block_intro,
   .block_product,
+  .block_product_detail,
   footer {
     padding: 40px 0;
   }
@@ -950,6 +1145,10 @@ footer .detail_info .info {
     gap: 50px;
   }
 
+  .list_intro .intro {
+    width: 100%;
+  }
+
 
   .block_company .box_text , 
   .block_company .image {
@@ -960,7 +1159,7 @@ footer .detail_info .info {
   /* Project PAge  */
 
   .project_page .list_news .box_news {
-    width: 45%;
+    width: 100%;
   }
 
   /* Product page  */
@@ -971,6 +1170,14 @@ footer .detail_info .info {
 
   .product_page .box_product{
     width: 46% !important;
+  }
+
+  .box_right {
+    margin-top: 30px;
+  }
+
+  .block_map iframe {
+    width: 100%;
   }
 
   footer .row {

@@ -3,9 +3,16 @@
 $(document).ready(function () {
 
     $(".open_menu").click(function(){
-        $('.menu_sp').toggle();
-        $('body').toggleClass('none_scroll');
-      });
+    $('.menu_sp').toggle();
+    $('body').toggleClass('none_scroll');
+    });
+
+
+    jQuery(".box_drop_down").click(function(){
+        $(this).parent(".box_content").find(".first_grap").slideToggle();
+        $(this).parent(".box_content").prevAll(".box_content").find(".first_grap").slideUp();
+        $(this).parent(".box_content").nextAll(".box_content").find(".first_grap").slideUp();
+    });
 });
 
 var swiper = new Swiper(".swiper_banner", {
